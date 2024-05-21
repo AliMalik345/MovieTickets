@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" style="-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;">
+   
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Movie Tickets</title>
+  </head>
+  <body style="background-color:rgb(19, 52, 80); color:white;">
+    
+    <div class="card text-center mt-5" style="background:transparent; " >
+        
+        <div class="card-body">
+          <h1 class="card-title">Movies Entertainment</h1>
+          <p class="card-text">We offer you the best experience with our 3D cinema. </p>
+          <a href="#" class="btn btn-primary">Book Tickets</a>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-5">
+        <form id="movie-form">
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select Movie</label>
+                <select class="form-control" id="exampleFormControlSelect1" required>
+                  <option>John Wick</option>
+                  <option>Shutter Island</option>
+                  <option>Fight Club</option>
+                  <option>Iron Man</option>
+                  <option>Home Alone</option>
+                </select>
+              </div>
+    
+              <div class="row">
+                  <div class="col">
+                    <label for ="numberOfTickets">First name</label>
+                    <input type="text" id="numberOfTickets" class="form-control" placeholder="Number of Tickets" required>
+                  </div>
+                  <div class="col">
+                    <label for="inputState">Slot</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose slot</option>
+                        <option>10:00am -12:30pm</option>
+                        <option>6:00pm - 8:30pm</option>
+                        <option>9pm - 11:30pm</option>
+                      </select>
+                  </div>
+              </div>
+            
+                <div class="row mt-3">
+                  <div class="col">
+                    <label>First name</label>
+                    <input type="text" class="form-control full-name" placeholder="First name" required>
+                  </div>
+                  <div class="col">
+                    <label>Last name</label>
+                    <input type="text" class="form-control full-name" placeholder="Last name">
+                  </div>
+                </div>
+              
+           
+                <fieldset class="form-group mt-3">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" required>
+                          <label class="form-check-label" for="gridRadios1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Female
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-number">Contact Number</label>
+                    <input type="text" class="form-control" id="contact-number" placeholder="Contact Number" required>
+                  </div>
+                  <div class="text-center mt-4">                 
+                     <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                  </div>
+          </form>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-5 ">
+        <table class="table" id="table" >
+            <thead>
+              <tr>
+                <th scope="col">TicketId#</th>
+                <th scope="col">Movie Name</th>
+                <th scope="col">Number of Tickets</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Email</th>
+                <th scope="col">Contact No.</th>
+                <th scope="col">Time slot</th>
+                <th scope="col">Date</th>
+              </tr>
+            </thead>
+        <tbody class="table-group-divider" id ="table-content">
+          </tbody>
+      </table>
+    
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
